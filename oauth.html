@@ -17,7 +17,7 @@
     <p id="p1">Your oauth token is </p>
     <script>
       if(window.location.hash){
-        var hash = window.location.hash.substring(1);
+        var hash = window.location.hash.substring(14);
         var oauth = hash.split("&")[0];
         var node = document.createTextNode("oauth:" + oauth);
         document.getElementById("p1").appendChild(node);
