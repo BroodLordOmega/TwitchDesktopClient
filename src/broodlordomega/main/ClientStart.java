@@ -1,10 +1,12 @@
 package broodlordomega.main;
 
+import broodlordomega.main.client.OAuthHandler;
+
 public class ClientStart {
 
     public static void main(String[] varargs)
     {
-        System.out.println();
+        OAuthHandler.GetOAuthToken();
     }
 
 }
