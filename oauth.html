@@ -14,10 +14,12 @@
   </head>
   <body>
     <script src="javascripts/scale.fix.js"></script>
+    <p id="p1">Your oauth token is </p>
     <script>
       if(window.location.hash){
         var hash = window.location.hash.substring(1);
-        alert(hash);
+        var node = document.createTextNode(" " + hash);
+        document.getElementById("p1").appendChild(node);
       }
     </script>
   </body>
